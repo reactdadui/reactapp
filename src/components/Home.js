@@ -1,11 +1,11 @@
 import React from 'react';
-class wode extends React.Conmponent{
+class Home extends React.Component{
     render(){
         return(
             <div>
-                <h1>我的</h1>
+                <h1>首页</h1>
             </div>
         )
     }
 }
-export default wode;
+export default Home;

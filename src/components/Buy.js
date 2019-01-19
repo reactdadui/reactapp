@@ -1,11 +1,11 @@
 import React from 'react';
-class shouye extends React.Conmponent{
+class Buy extends React.Component{
     render(){
         return(
             <div>
-                <h1>首页</h1>
+                <h1>买买买</h1>
             </div>
         )
     }
 }
-export default shouye;
+export default Buy;

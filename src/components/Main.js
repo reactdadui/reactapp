@@ -1,11 +1,11 @@
 import React from 'react';
-class gouwuche extends React.Conmponent{
+class Main extends React.Component{
     render(){
         return(
             <div>
-                <h1>购物车</h1>
+                <h1>我的</h1>
             </div>
         )
     }
 }
-export default gouwuche;
+export default Main;

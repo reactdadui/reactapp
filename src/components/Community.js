@@ -1,5 +1,5 @@
 import React from 'react';
-class sheqv extends React.Conmponent{
+class Community extends React.Component{
     render(){
         return(
             <div>
@@ -8,4 +8,4 @@ class sheqv extends React.Conmponent{
         )
     }
 }
-export default sheqv;
+export default Community;
