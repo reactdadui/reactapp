@@ -21,7 +21,7 @@ class App extends Component {
             <NavLink to='./Cart'>购物车</NavLink>
             <NavLink to='./Main'>我的</NavLink>
 
-            {/* 路由容器 ha*/}
+            {/* 路由容器 */}
             <Route path='/home' component={Home}></Route>
             <Route path='/buy' component={Buy}></Route>
             <Route path='/community' component={Community}></Route>
