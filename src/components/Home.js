@@ -4,6 +4,7 @@ class Home extends React.Component{
         return(
             <div className="zujian">
                 <h1>首页</h1>
+                <span className="iconfont icon-liebiao"></span>
             </div>
         )
     }
