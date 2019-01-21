@@ -11,7 +11,7 @@ class Community extends React.Component{
     render(){
         return(
             <div className="zujian">
-            	<header>
+            	<header className="h-head">
             		<Link to='/search'><SearchBar placeholder="搜索" maxLength={8} /></Link>
             	</header>
             	<section>

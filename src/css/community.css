@@ -1,5 +1,5 @@
 .h-top{color: red;}
-header{height: 44px;background: #FFA500;}
+.h-head{height: 44px;}
 .h-imgbox{width: 100vw;height: 30vw;background: #90EE90;}
 .h-zhuanqu{width: 100vw;height: 10vw;background: #FFA500;}
 .h-zhuanqu div{width: 45px;height: 10vw;background: #800080;float: left;}
