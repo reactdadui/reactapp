@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Community from './components/Community';
 import Cart from './components/Cart';
 import Buy from './components/Buy';
+import Detail from './components/Detail';
 import './App.css';
 import './font/iconfont.css';
 
@@ -22,9 +23,11 @@ class App extends Component {
 	            <Route path='/community' component={Community}></Route>
 	            <Route path='/cart' component={Cart}></Route>
 	            <Route path='/main' component={Main}></Route>
+	            <Route path='/detail' component={Detail}></Route>
 	            <Redirect to='/home'/>
             </Switch>
-            {/* 首页买买买社区购物车我的 */}
+             
+            {/* 首页  买买买  社区  购物车  我的 */}
           	<footer>
 	            <NavLink to='/home'><b className="iconfont icon-home2"></b><p>首页</p></NavLink>
 	            <NavLink to='/buy'><b className="iconfont icon-nvbao"></b><p>买买买</p></NavLink>
