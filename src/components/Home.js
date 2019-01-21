@@ -1,10 +1,12 @@
 import React from 'react';
+import Footer from './Footer';
+
 class Home extends React.Component{
     render(){
         return(
             <div className="zujian">
-                <h1>首页</h1>
-                <span className="iconfont icon-liebiao"></span>
+                <section><h1>首页</h1></section>
+                <Footer/>
             </div>
         )
     }
