@@ -1,0 +1,58 @@
+.tot{
+	width: 45vw;
+	background: #fff;
+	margin-top:20px;
+	
+	
+}
+.tot p a{
+	color:#666;
+	font-size:12px;
+	line-height: 26px;
+}
+.tot .tgg{
+	color:red;
+	margin-top:10px;
+}
+
+.tca{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ttt{
+	width: 45vw;
+}
+
+
+.aaaa{
+	width:100vw;
+	height:50px;
+	background:red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.aaaa .a-bu{
+	width:70vw;
+	height:30px;
+	background: #fff;
+	text-align:center;
+	line-height:30px;
+	border-radius: 30px;
+}
+
+.aaaa .a-bu input{
+	border: none;
+	margin-left: 20px;
+}
+.aaaa .icon-31wangwang{
+	font-size: 30px;
+	margin-left: 20px;
+	color:#fff;
+}
+

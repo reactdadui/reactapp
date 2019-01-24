@@ -3,6 +3,7 @@ import Footer from './Footer';
 import $ from 'jquery';
 import {NavLink} from 'react-router-dom';
 import '../css/buy.css';
+
 import { Accordion, List } from 'antd-mobile';
 class Buy extends React.Component{
 	onChange = (key) => {
@@ -13,7 +14,14 @@ class Buy extends React.Component{
   constructor(props){
   	super(props)
   	this.state={
-  		list:[]
+  		list1:[],
+  		list2:[],
+  		list3:[],
+  		list4:[],
+  		list5:[],
+  		list6:[],
+  		list7:[],
+  		list8:[]
   	}
   }
     render(){
@@ -31,11 +39,19 @@ class Buy extends React.Component{
             <Accordion defaultActiveKey="0" className="my-accordion" onChange={this.onChange}>
 		          <Accordion.Panel header="美容护肤" >
 		            <List className="my-list">
+                        
+		            
 			              {
-			            	this.state.list.map(function(item,i){
+			            	this.state.list1.map(function(item,i){
 			            		return(
-			            			<div key={i}>
-			            			   <p><NavLink to="/detail">{item.title}</NavLink></p>
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                      
+						                      <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
 			            			</div>
 			            		)
 			            	})
@@ -43,39 +59,116 @@ class Buy extends React.Component{
 		            </List>
 		          </Accordion.Panel>
 		          <Accordion.Panel header="时尚彩妆" className="pad1">
-		              <List.Item>content 1</List.Item>
-		              <List.Item>content 2</List.Item>
-		              <List.Item>content 3</List.Item>
+		              {
+			            	this.state.list2.map(function(item,i){
+			            		return(
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                     <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
+			            			</div>
+			            		)
+			            	})
+			            }
 		          </Accordion.Panel>
 		          <Accordion.Panel header="精油香氛" className="pad2">
-		              <List.Item>content 1</List.Item>
-		              <List.Item>content 2</List.Item>
-		              <List.Item>content 3</List.Item>          
+		              {
+			            	this.state.list3.map(function(item,i){
+			            		return(
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                      <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
+			            			</div>
+			            		)
+			            	})
+			            }
 		          </Accordion.Panel>
 		          <Accordion.Panel header="身体护理" className="pad3">
-		              <List.Item>content 1</List.Item>
-		              <List.Item>content 2</List.Item>
-		              <List.Item>content 3</List.Item>          
+		              {
+			            	this.state.list4.map(function(item,i){
+			            		return(
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                      <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
+			            			</div>
+			            		)
+			            	})
+			            }         
 		          </Accordion.Panel>
 		          <Accordion.Panel header="男士护肤" className="pad4">
-		              <List.Item>content 1</List.Item>
-		              <List.Item>content 2</List.Item>
-		              <List.Item>content 3</List.Item>          
+		              {
+			            	this.state.list5.map(function(item,i){
+			            		return(
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                      <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
+			            			</div>
+			            		)
+			            	})
+			            }     
 		          </Accordion.Panel>
 		          <Accordion.Panel header="洗发护发" className="pad5">
-		              <List.Item>content 1</List.Item>
-		              <List.Item>content 2</List.Item>
-		              <List.Item>content 3</List.Item>          
+		              {
+			            	this.state.list6.map(function(item,i){
+			            		return(
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                      <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
+			            			</div>
+			            		)
+			            	})
+			            }
 		          </Accordion.Panel>
 		          <Accordion.Panel header="美容工具" className="pad6">
-		              <List.Item>content 1</List.Item>
-		              <List.Item>content 2</List.Item>
-		              <List.Item>content 3</List.Item>          
+		              {
+			            	this.state.list7.map(function(item,i){
+			            		return(
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                      <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
+			            			</div>
+			            		)
+			            	})
+			            }        
 		          </Accordion.Panel>
 		          <Accordion.Panel header="女性护理" className="pad7">
-		              <List.Item>content 1</List.Item>
-		              <List.Item>content 2</List.Item>
-		              <List.Item>content 3</List.Item>          
+		              {
+			            	this.state.list8.map(function(item,i){
+			            		return(
+			            			<div key={i} className="my-u">
+				            			<ul className="my-a">
+						                   <li>
+						                      <img src={"https://shopimg.meidal.com"+item.pic_url}/>
+						                      <p><NavLink to={"/lists/"+item.cid}>{item.cname}</NavLink></p>
+						                   </li>
+						                </ul>
+			            			</div>
+			            		)
+			            	})
+			            }      
 		          </Accordion.Panel>
         </Accordion>
         </section>
@@ -91,16 +184,26 @@ class Buy extends React.Component{
     	var _this=this;
     	$.ajax({
     		type:"get",
-    		url:"https://shopapi.meidal.com/Portal/getHome?",
-
-    		async:false,
-    		
+    		url:"https://shopapi.meidal.com/Goods_Category/getTotalCategory?",
+    		async:false,  		
     		success:function(data){
     			console.log(data.info)
-			_this.setState({list:data.info.data.enter})
+    			console.log(data.info.data[1].two_Category_list)
+			_this.setState({
+				list1:data.info.data[0].two_Category_list,
+				list2:data.info.data[1].two_Category_list,
+				list3:data.info.data[2].two_Category_list,
+				list4:data.info.data[3].two_Category_list,
+				list5:data.info.data[4].two_Category_list,
+				list6:data.info.data[5].two_Category_list,
+				list7:data.info.data[6].two_Category_list,
+				list8:data.info.data[7].two_Category_list
+			
+			})
     			
     		}
     	});
+    	
     }
 }
 
