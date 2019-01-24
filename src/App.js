@@ -5,11 +5,10 @@ import Main from './components/Main';
 import Community from './components/Community';
 import Cart from './components/Cart';
 import Buy from './components/Buy';
-
 import Search from './components/Search';
-
 import Detail from './components/Detail';
-
+import Zhengwen from './components/Zhengwen';
+import Zhuanqu from './components/Zhuanqu';
 import './App.css';
 import './font/iconfont.css';
 
@@ -29,6 +28,8 @@ class App extends Component {
 	            <Route path='/main' component={Main}></Route>
 							<Route path='/detail' component={Detail}></Route>
 	            <Route path='/search' component={Search}></Route>
+	            <Route path='/zhengwen' component={Zhengwen}></Route>
+	            <Route path='/zhuanqu' component={Zhuanqu}></Route>
 	            <Redirect to='/home'/>
             </Switch>
           	

@@ -1,5 +1,35 @@
 .h-top{color: red;}
-.h-head{height: 44px;}
-.h-imgbox{width: 100vw;height: 30vw;background: #90EE90;}
-.h-zhuanqu{width: 100vw;height: 10vw;background: #FFA500;}
-.h-zhuanqu div{width: 45px;height: 10vw;background: #800080;float: left;}
+.h-header{height: 44px;}
+.h-imgbox{width: 100vw;height: 30vw;}
+.h-imgbox img{width: 100%;height: 100%;}
+.h-zhuanqu{width: 96vw;height: 20vw;padding:2vw;}
+.h-zhuanqu div{width: 44vw;height: 100%;float: left;margin: 0 2vw;}
+.h-zhuanqu img{width: 100%;height: 100%;}
+.h-h3{font-size: 16px;font-weight: 200;padding-top: 10px;border-top: 1px solid #bbb;padding-left: 10px;background: #fff;}
+
+.h-cont li{background: #fff;padding: 0 4vw;margin-bottom: 10px;}
+.h-cont a{color: #000;}
+.h-libot{border-top: 1px solid #bbb;display: flex;justify-content: space-around;padding: 2vw 0;}
+.h-libot b,.h-ulbot b{font-weight: normal;color: #333;font-size: 12px;}
+.h-tab{background: #90EE90;border-radius: 12px;line-height: 30px;padding:2px 8px;color: #fff;}
+
+.h-head{position: relative;padding: 4vw 0;}
+.h-touxiang{width: 12vw;height: 12vw;background: greenyellow;border-radius: 50%;line-height: 15vw;float: left;margin: 2vw;}
+.h-touxiang img{width: 100%;height: 100%;border-radius: 50%;}
+.h-head p{font-size: 15px;font-weight: normal;color: orange;margin-top: 4vw;}
+.h-head time{font-size: 12px;font-weight: normal;color: #999;}
+.h-head .h-guanzhu{position: absolute;top: 10vw;right: 5vw;border: 1px solid #999;width: 48px;height: 24px;line-height: 21px;text-align: center;border-radius: 4px;}
+.h-picbox{width: 100%;padding: 2vw 0;overflow: hidden;}
+.h-img{width: 30vw;height: 30vw;margin: 0.3vw;float: left;}
+.h-img img{width: 100%;height: 100%;}
+
+
+
+.pinglun{background: #fff;}
+.pinglun li{overflow: hidden;}
+.pinglun h4{margin: 5px 0;font-size: 14px;font-weight: normal;}
+.h-pingl{width: 16vw;height: 100%;float: left;}
+.h-pingr{width: 80vw;float: left;}
+.h-ulbot{display: flex;justify-content: space-around; background: #fff;width: 100vw;height:36px;line-height: 36px;}
+.h-pingtime{height: 20px;padding: 5px 0 10px;border-bottom: 1px solid #999;}
+.h-pingr a{color: #000000;margin:0 10px;float: right;}
