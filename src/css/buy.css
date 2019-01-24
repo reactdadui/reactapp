@@ -1,0 +1,82 @@
+/*.my-accordion{
+	flex:1;
+	overflow: auto;
+}*/
+
+.a-b{
+	width:100vw;
+	height:50px;
+	background:red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+}
+
+
+.a-b .a-bu{
+	width:70vw;
+	height:30px;
+	background: #fff;
+	text-align:center;
+	line-height:30px;
+	border-radius: 30px;
+}
+
+.a-b .a-bu input{
+	border: none;
+	margin-left: 20px;
+}
+.a-b .icon-31wangwang{
+	font-size: 30px;
+	margin-left: 20px;
+	color:#fff;
+}
+
+.am-list-body{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.am-accordion-content-box{
+	display: flex;
+	flex-wrap: wrap;
+}
+.my-u{
+	width: 25vw;
+}
+.my-u .my-a{
+	display: flex;
+	width: 25vw;
+	flex-wrap: wrap;
+	margin-top:20px;
+}
+
+.my-a li{
+	width: 25vw;
+	height:100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.my-a li img{
+	width:60px;
+	height:60px;
+	border-radius: 60px;
+	background: #F0F0F0;
+	
+}
+
+.my-a li p{
+	margin-top:10px ;
+	font-size:14px;
+	
+	
+}
+.my-a li p a{
+	color: #666;
+}

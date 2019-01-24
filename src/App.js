@@ -11,6 +11,10 @@ import InvitedMember from './components/InvitedMember';
 import Plastic from './components/Plastic';
 import Subject from './components/Subject';
 import Field from './components/Field';
+import Detail from './components/Detail';
+import Lists from './components/Lists';
+
+
 import './App.css';
 import './font/iconfont.css';
 
@@ -28,12 +32,14 @@ class App extends Component {
 	            <Route path='/community' component={Community}></Route>
 	            <Route path='/cart' component={Cart}></Route>
 	            <Route path='/main' component={Main}></Route>
+							<Route path='/detail/:IP' component={Detail}></Route>
 	            <Route path='/search' component={Search}></Route>
               <Route path='/storeList' component={StoreList}></Route>
               <Route path='/field' component={Field}></Route>
               <Route path='/invitedMember' component={InvitedMember}></Route>
               <Route path='/plastic' component={Plastic}></Route>
               <Route path='/subject' component={Subject}></Route>
+	            <Route path='/lists/:id' component={Lists}></Route>
 	            <Redirect to='/home'/>
             </Switch>
           	

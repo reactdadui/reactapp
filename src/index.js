@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from 'antd-mobile';
-import 'antd-mobile/dist/antd-mobile.css';
 import './index.css';
 import 'antd-mobile/dist/antd-mobile.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+//import 'antd/dist/antd.css';
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
