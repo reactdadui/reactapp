@@ -6,6 +6,11 @@ import Community from './components/Community';
 import Cart from './components/Cart';
 import Buy from './components/Buy';
 import Search from './components/Search';
+import StoreList from './components/StoreList';
+import InvitedMember from './components/InvitedMember';
+import Plastic from './components/Plastic';
+import Subject from './components/Subject';
+import Field from './components/Field';
 import './App.css';
 import './font/iconfont.css';
 
@@ -24,6 +29,11 @@ class App extends Component {
 	            <Route path='/cart' component={Cart}></Route>
 	            <Route path='/main' component={Main}></Route>
 	            <Route path='/search' component={Search}></Route>
+              <Route path='/storeList' component={StoreList}></Route>
+              <Route path='/field' component={Field}></Route>
+              <Route path='/invitedMember' component={InvitedMember}></Route>
+              <Route path='/plastic' component={Plastic}></Route>
+              <Route path='/subject' component={Subject}></Route>
 	            <Redirect to='/home'/>
             </Switch>
           	

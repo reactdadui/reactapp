@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.c-header{
+    display: flex;
+    height: 42px;
+    background: red;
+    align-items: center;
+}
+.c-header h3{
+    width: 96vw;
+    text-align: center;
+}
+.c-da ul{
+    display: flex;
+    justify-content: space-around;
+    height: 107px;
+}
+.c-da li{
+    width: 28vw;
+    text-align: center;
+}
+.tui{
+    display: flex;
+    border-bottom: 1px solid #c3b8b8;
+}
+.tui ul{
+    width: 75vw;
+
+}
+.tui ul li:first-child{
+    margin: 12px 0;
+}
+.tui ul li:last-child{
+    margin: 12px 0;
+}
+.tui ul li:nth-child(2){
+   line-height: 22px;
+}
+.tui div{
+    width: 25vw;
+
+}
+.tui div img{
+    width: 100%;
+    margin-top: 50%;
+}
+section h2{
+    font-weight: 200;
+    text-align: center;
+    font-size: 20px
+
+}

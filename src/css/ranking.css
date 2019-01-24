@@ -1,0 +1,56 @@
+
+.c-zujian{
+    background: #817979;
+}
+.c-top{
+    display: flex;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.c-tu{
+    width: 20vw;
+}
+.c-tu img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.c-top ul{
+    width: 65vw;
+    font-size: 17px;
+    color: #817b7b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c-top li:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.c-jin{
+    display: block;
+    width: 15vw;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #d32174;
+    height: 24px;
+}
+.c-bottom{
+    display: flex;
+}
+.c-bottom dl{
+    width: 25vw;
+}
+.c-bottom dt{
+    height: 68px;
+    
+}
+.c-bottom dt img{
+    height:100%;
+    width:100%;
+}
+.c-sh{
+    background: white;
+    margin: 15px 0;
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
+import $ from 'jquery';
+import {NavLink} from 'react-router-dom';
 
 // import { SearchBar, Button, WhiteSpace, WingBlank } from 'antd-mobile';
 
@@ -12,15 +14,37 @@ class Home extends React.Component{
             value: '',
             data: ['1', '2', '3'],
             imgHeight: 176,
+            detail:[],
+            zhuanchang:[],
           };
     }
     componentDidMount() {
+        
         // simulate img loading
+        var _this=this;
+        $.ajax({
+            type:'get',
+            url:'https://shopapi.meidal.com/Portal/getHome?',
+         //    async:'false',
+            dataType:'json',
+            success:function(data){
+                console.log(data.info.data.special)
+                _this.setState({detail:data.info.data.enter})
+                _this.setState({zhuanchang:data.info.data.special})
+                
+             //    console.log(_this.state.detail)
+            }
+        })
         setTimeout(() => {
           this.setState({
             data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
           });
         }, 100);
+      
+
+      }
+      componentWillMount(){
+       
       }
    
     render(){
@@ -61,30 +85,52 @@ class Home extends React.Component{
                         ))}
                     </Carousel>
                     <div className='list'>
-                        <dl>
-                            <dd className='iconfont icon-31shoucangdedianpu'></dd>
-                            <dt>店铺</dt>
-                        </dl> 
-                        <dl>
-                            <dd className='iconfont icon-31shoucangdedianpu'></dd>
-                            <dt>分享</dt>
-                        </dl> 
-                        <dl>
-                            <dd className='iconfont icon-31shoucangdedianpu'></dd>
-                            <dt>专题</dt>
-                        </dl> 
+                               {
+                                   this.state.detail.map(function(item,i){
+                                       return(
+                                        <NavLink to={item.relation.replace(" ","")}  key={i}>
+                                            <dl>
+                                                <dd>
+                                                    <img src={'https://shopimg.meidal.com'+item.icon_url}/>
+                                                </dd>
+                                                <dt>{item.title}</dt>
+                                            </dl>
+                                        </NavLink>
+                                       )
+                                   })
+                               }
+                        {/*<NavLink to='/shop'>
+                            <dl>
+                                <dd className='iconfont icon-31shoucangdedianpu'></dd>
+                                <dt>店铺</dt>
+                            </dl>
+                        </NavLink>
+                         <NavLink to='/share'>
+                            <dl>
+                                <dd className='iconfont icon-31shoucangdedianpu'></dd>
+                                <dt>分享</dt>
+                            </dl>
+                        </NavLink>
+                        <NavLink to='/recommend'>
+                            <dl>
+                                <dd className='iconfont icon-31shoucangdedianpu'></dd>
+                                <dt>专题</dt>
+                            </dl>
+                        </NavLink>
                         <dl>
                             <dd className='iconfont icon-31shoucangdedianpu'></dd>
                             <dt>限时</dt>
                         </dl> 
-                        <dl>
-                            <dd className='iconfont icon-31shoucangdedianpu'></dd>
-                            <dt>美容</dt>
-                        </dl> 
+                        <NavLink to='/plastic'>
+                            <dl>
+                                <dd className='iconfont icon-31shoucangdedianpu'></dd>
+                                <dt>美容整形</dt>
+                            </dl>
+                        </NavLink>
                         <dl>
                             <dd className='iconfont icon-31shoucangdedianpu'></dd>
                             <dt>测颜值</dt>
-                        </dl> 
+                        </dl>  */}
                     </div>
                     <div className='meida'>
                         <div className='headlines'>
@@ -102,13 +148,46 @@ class Home extends React.Component{
                         </ul>        
                         </div>
                     </div>
-                    <div className='picture'></div>
-                    <ul className='wei'>
-                        <li>tupian</li>
-                        <li>3333</li>
-                        <li>333</li>
-                        <li>￥112</li>
-                    </ul>
+                    
+                    {
+                       
+                        this.state.zhuanchang.map(function(item,i){
+                            return(
+                                <div key={i}>
+                                    <NavLink to='/field' className='picture'>
+                                    <img src={'https://shopimg.meidal.com'+item.pic_url}/>
+                                    </NavLink>
+                                    <div className='c-zhuan'>
+                                    {
+                                        item.goods_list.map(function(ite,s){
+                                            return(
+
+                                                <ul className='wei' key={s}>
+                                            <li><img src={'https://shopimg.meidal.com'+ite.pic_url}/></li>
+                                                    
+                                            <li>{ite.product_name}</li>
+                                            <li>￥{ite.price}</li>
+                                        </ul>
+                                            )
+                                        })
+                                    } 
+                                    </div>   
+                                       {/* <ul className='wei'>
+                                            <li><img src={'https://shopimg.meidal.com'+item.goods_list[0].pic_url}/></li>
+                                                    
+                                            <li>{item.goods_list[0].product_name}</li>
+                                            <li>￥{item.goods_list[0].price}</li>
+                                        </ul> */}
+                                                   
+                                             
+                                       
+                                    
+                                    
+                                </div>
+                        )
+                        })
+                    }
+                    
                 </section>
                 <Footer/>
                 
