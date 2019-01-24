@@ -7,8 +7,9 @@ import Cart from './components/Cart';
 import Buy from './components/Buy';
 
 import Search from './components/Search';
-
 import Detail from './components/Detail';
+import Lists from './components/Lists';
+
 
 import './App.css';
 import './font/iconfont.css';
@@ -27,8 +28,9 @@ class App extends Component {
 	            <Route path='/community' component={Community}></Route>
 	            <Route path='/cart' component={Cart}></Route>
 	            <Route path='/main' component={Main}></Route>
-							<Route path='/detail' component={Detail}></Route>
+							<Route path='/detail/:IP' component={Detail}></Route>
 	            <Route path='/search' component={Search}></Route>
+	            <Route path='/lists/:id' component={Lists}></Route>
 	            <Redirect to='/home'/>
             </Switch>
           	
