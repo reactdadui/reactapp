@@ -1,0 +1,7 @@
+.d-col{width: 100vw;height: 50px;border-bottom:1px solid #ccc;line-height: 50px;font-size: 18px;text-align: center;}
+.d-col span{float: left;margin-left:15px ;}
+.d-col b{font-weight: normal;margin-left: -15px;}
+.d-ect ul{display: flex;justify-content: space-around;}
+.d-ect li{width: 50vw;height: 30px;line-height: 30px;text-align: center;border-bottom: 1px solid #ccc;}
+.d-ect a{color: #aaa;}
+.d-ect a:hover{color: red;}

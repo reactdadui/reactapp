@@ -1,0 +1,7 @@
+.d-ord{width: 100vw;height: 50px;border-bottom:1px solid #ccc;line-height: 50px;font-size: 18px;text-align: center;}
+.d-ord span{float: left;margin-left:15px ;}
+.d-ord b{font-weight: normal;margin-left: -15px;}
+.d-list ul{display: flex;justify-content: space-around;}
+.d-list li{width: 20vw;height: 30px;line-height: 30px;text-align: center;border-bottom: 1px solid #ccc;}
+.d-list a{color: #aaa;}
+.d-list a:hover{color: red;border-bottom: 1px solid red;}

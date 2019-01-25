@@ -1,0 +1,11 @@
+.d-per{width: 100vw;height: 44px;background: #EF4BA9;line-height: 44px;font-size: 18px;text-align: center;color: white;}
+.d-per span{float: left;margin-left:15px ;}
+.d-per b{font-weight: normal;margin-left: -15px;}
+.d-dd{width: 100vw;height: 10px;background: #ddd;}
+.d-pic{height: 80px;width: 97vw;border-bottom:1px solid #ddd ;float: right;line-height: 80px;text-align: center;}
+.pic-1{width: 65px;height: 65px;background: #EF4BA9;border-radius: 50%;float: right;line-height: 65px;text-align: center;margin-top: 7.2px;margin-right: 15px;}
+.d-pic span{float: left;}
+.d-cen{height: 80px;width: 97vw;float: right;line-height: 80px;text-align: center;}
+.d-feng{width: 65px;height: 65px;background: rgba(135,136,13,.2);float: right;margin-top: 7.2px;margin-right: 15px;}
+.d-cen span{float: left;}
+.d-de{width: 100vw;height: 30px;background: #ddd;}

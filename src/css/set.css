@@ -1,0 +1,4 @@
+.d-set{width: 100vw;height: 50px;border-bottom:1px solid #ccc;line-height: 50px;font-size: 18px;text-align: center;background: #EF4BA9;color: white;}
+.d-set span{float: left;margin-left:15px ;}
+.d-set b{font-weight: normal;margin-left: -15px;}
+.d-tui{width: 100vw;height: 30px;font-size: 16px;line-height: 30px;text-align: center;background: #fff;color: red;position: absolute;bottom:0}

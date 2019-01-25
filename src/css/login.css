@@ -1,0 +1,12 @@
+.d-log{width: 100vw;height: 44px;border-bottom:1px solid #ccc;line-height: 44px;font-size: 18px;text-align: center;background: #EF4BA9;color: white;font-weight: normal;}
+.d-tux{width: 65px;height: 65px;background: #EF4BA9;border-radius: 50%;line-height: 65px;text-align: center;margin: 35px auto;color: #fff;font-weight: bolder;}
+.d-zhuce{width: 95vw;margin: 0 auto;}
+.d-txt,.d-pas{width: 95vw;height: 40px;border-bottom:1px solid #ccc ;line-height: 40px;text-align: left;}
+.d-zhuce input{outline: none;border: none;height: 40px;}
+.d-pas input{width: 95vw;background: whitesmoke;}
+.d-txt input{width: 88vw;background: whitesmoke;}
+.d-txt span{color: red;}
+.d-btn button{width: 60vw;height: 30px;background: palevioletred;color: #fff;line-height: 30px;text-align: center;border: none;}
+.d-btn{margin: 55px auto;width: 60vw;height: 30px;}
+.d-reg{height: 20px;display: flex;justify-content: space-between;color: red;margin-top: 15px;}
+.d-reg b{font-weight: normal;}
