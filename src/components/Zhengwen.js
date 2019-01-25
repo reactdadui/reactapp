@@ -1,6 +1,5 @@
 import React from 'react';
 import PinkTop from './PinkTop';
-//import {Link} from 'react-router-dom';
 import $ from 'jquery';
 import Mock from 'mockjs';
 import {ActionSheet, Toast} from 'antd-mobile';
@@ -116,14 +115,14 @@ dataList = [
 					                			<p className="h-pingyu">{item.text}</p>
 					                			<div className="h-pingtime">
 						                			<time>{item.time}</time>
-						                			<a>
+						                			<i>
 								        				<span className="iconfont icon-dianzan"></span>
 								        				<b>0</b>
-								        			</a>
-								        			<a>
+								        			</i>
+								        			<i>
 								        				<span className="iconfont icon-31pinglun"></span>
 								        				
-								        			</a>
+								        			</i>
 								        		</div>
 							        		</div>
 				                		</li>

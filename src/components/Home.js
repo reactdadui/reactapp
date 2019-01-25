@@ -28,7 +28,7 @@ class Home extends React.Component{
          //    async:'false',
             dataType:'json',
             success:function(data){
-                console.log(data.info.data.special)
+                //console.log(data.info.data.special)
                 _this.setState({detail:data.info.data.enter})
                 _this.setState({zhuanchang:data.info.data.special})
                 

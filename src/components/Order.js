@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import '../css/Order.css';
 class Order extends React.Component{
 	tap(){

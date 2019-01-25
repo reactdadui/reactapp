@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import '../css/login.css';
 import $ from 'jquery';
 class Login extends React.Component{

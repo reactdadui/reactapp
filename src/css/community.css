@@ -23,8 +23,6 @@
 .h-img{width: 30vw;height: 30vw;margin: 0.3vw;float: left;}
 .h-img img{width: 100%;height: 100%;}
 
-
-
 .pinglun{background: #fff;}
 .pinglun li{overflow: hidden;}
 .pinglun h4{margin: 5px 0;font-size: 14px;font-weight: normal;}
@@ -32,4 +30,4 @@
 .h-pingr{width: 80vw;float: left;}
 .h-ulbot{display: flex;justify-content: space-around; background: #fff;width: 100vw;height:36px;line-height: 36px;}
 .h-pingtime{height: 20px;padding: 5px 0 10px;border-bottom: 1px solid #999;}
-.h-pingr a{color: #000000;margin:0 10px;float: right;}
+.h-pingr i{color: #000000;margin:0 10px;float: right;}

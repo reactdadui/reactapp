@@ -1,10 +1,8 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import { List } from 'antd-mobile';
 import PinkTop from './PinkTop';
 import '../css/set.css';
 const Item = List.Item;
-const Brief = Item.Brief;
 
 class Set extends React.Component{
 	constructor(props){

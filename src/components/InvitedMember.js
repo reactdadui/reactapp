@@ -1,11 +1,11 @@
 import React from 'react';
-import { ActionSheet, WingBlank, WhiteSpace, Button, Toast } from 'antd-mobile';
+import { ActionSheet, Toast } from 'antd-mobile';
 import {NavLink} from 'react-router-dom';
 import Ma from './Ma';
 import Chengguo from './Chengguo';
 import Guize from './Guize';
 import "../css/share.css";
-import {BrowserRouter as Router,Route,Redirect,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Redirect} from 'react-router-dom';
 
 class InvitedMember extends React.Component{
     constructor(props){

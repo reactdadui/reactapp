@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import '../css/collect.css';
 class Collect extends React.Component{
 	tap(){

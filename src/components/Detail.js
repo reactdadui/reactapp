@@ -1,6 +1,5 @@
 import React from 'react';
 import $ from 'jquery'
-import {NavLink} from 'react-router-dom';
 import '../css/detail.css';
 
 class Detail extends React.Component{

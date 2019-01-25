@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import { List } from 'antd-mobile';
 import '../css/help.css';
 const Item = List.Item;

@@ -27,7 +27,7 @@ class Lists extends React.Component{
 			            			
 			            			<div className="tot" key={i}>
 			            			   
-			            				<img className="ttt" src={"https://shopimg.meidal.com"+item.pic_url}/>
+			            				<img className="ttt" src={"https://shopimg.meidal.com"+item.pic_url} alt="图片"/>
 			            				<p><NavLink to={"/detail/"+item.goods_id}>{item.product_name}</NavLink></p>
 			            				<p className="tgg">${item.price}</p>
 			            				
