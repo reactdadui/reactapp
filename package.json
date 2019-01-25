@@ -2,6 +2,7 @@
   "name": "pro",
   "version": "0.1.0",
   "private": true,
+  "homepage":".",
   "dependencies": {
     "antd-mobile": "^2.2.8",
     "mockjs": "^1.0.1-beta3",
