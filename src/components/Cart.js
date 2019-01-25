@@ -4,7 +4,8 @@ class Cart extends React.Component{
     render(){
         return(
             <div className="zujian">
-                <section><h1>购物车</h1></section>
+            	<header className="d-log"><b>购物车</b></header>
+                <section></section>
                 <Footer/>
             </div>
         )
